@@ -1,0 +1,2 @@
+[webservers]
+34.68.199.58 ansible_user=prince 
