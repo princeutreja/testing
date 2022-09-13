@@ -25,7 +25,11 @@
         service:
           name: nginx
           state: started
-          
+      - name: Deploy static website
+        copy:
+          src: index.html
+          dest: /var/www/html/
+
 #   - hosts: all
 #   collections:
 #     - nginxinc.nginx_core
