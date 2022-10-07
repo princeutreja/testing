@@ -5,7 +5,7 @@
   tasks:
     - name: Install NGINX
       ansible.builtin.include_role:
-        name: nginx
+        name: ansible-role-nginx
 
 
 # ---
