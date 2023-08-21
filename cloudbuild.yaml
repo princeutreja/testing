@@ -1,3 +1,5 @@
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', 'static-content/testing.html', 'gs://emometer-analytics/']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['acl', 'ch', '-u', 'AllUsers:R', 'gs://emometer-analytics/testing.html']
